@@ -13,3 +13,9 @@ def investimentos(request):
 
 def novo_investimento(request):
     return render(request, 'investimentos/novo_investimento.html')
+
+def detalhe(request, id_investimento):
+    dados = {
+        'dados': Investimento.objects.get(pk=id_investimento)
+    }
+    return render(request,'investimentos/detalhe.html', context=dados)
