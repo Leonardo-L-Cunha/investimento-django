@@ -17,6 +17,9 @@
             <button>
                 <a href="{% url 'detalhe' dado.id %}">Detalhe</a>
             </button>
+            <button>
+                <a href="{% url 'editar' dado.id %}">Editar</a>
+            </button>
         </td>
     </tr>
     {% endfor %}
