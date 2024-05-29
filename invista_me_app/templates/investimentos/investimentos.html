@@ -20,6 +20,9 @@
             <button>
                 <a href="{% url 'editar' dado.id %}">Editar</a>
             </button>
+            <button>
+                <a href="{% url 'excluir' dado.id %}">Excluir</a>
+            </button>
         </td>
     </tr>
     {% endfor %}
